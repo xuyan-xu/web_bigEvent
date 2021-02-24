@@ -46,7 +46,7 @@ $(function () {
         //     $('#link_login').click()
         // })
         $.ajax({
-            url: 'http://ajax.frontend.itheima.net/api/reguser',
+            url: '/api/reguser',
             method: 'POST',
             data: {
                 username: $('#form_reg [name=username]').val(),
@@ -68,7 +68,7 @@ $(function () {
         // 阻止默认提交行为
         e.preventDefault()
         $.ajax({
-            url: 'http://ajax.frontend.itheima.net/api/login',
+            url: '/api/login',
             method: 'POST',
             // 快速获取表单中的数据
             data: $(this).serialize(),
