@@ -46,8 +46,8 @@ $(function () {
         //     $('#link_login').click()
         // })
         $.ajax({
-            url: '/api/reguser',
             method: 'POST',
+            url: '/api/reguser',
             data: {
                 username: $('#form_reg [name=username]').val(),
                 password: $('#form_reg [name=password]').val()
